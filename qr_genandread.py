@@ -1,7 +1,7 @@
 import qrcode
 import cv2
 
-data = input("Enter the data to be qr-ised")
+data = input("Enter the data to be qr-ised: ")
 qr_filename = 'qrsample.png'
 img = qrcode.make(data)
 img.save(qr_filename)
