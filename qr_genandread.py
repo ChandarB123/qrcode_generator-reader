@@ -11,7 +11,6 @@ detector = cv2.QRCodeDetector()
 qrdata, bbox, straight_qrcode = detector.detectAndDecode(img_qr)
 if bbox is not None:
     print("The Data is:", qrdata)
-
     n_lines = len(bbox)
     print(bbox)
     for i in range(n_lines):
